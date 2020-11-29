@@ -1,0 +1,38 @@
+.container-picker {
+  width: 215px;
+  height: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 46px;
+  margin-top: 70px;
+  position: relative;
+}
+.react-datepicker__tab-loop{
+  position: relative;
+  left: 280px;
+  top:-90px
+}
+.react-datepicker__triangle{
+  display: none;
+}
+
+.custom-border {
+  border: none;
+  outline: none;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #1157a7;
+  width: 180px;
+  height: 28px;
+}
+
+.icon-picker {
+  width: 21px;
+  height: 21px;
+  margin-top: 1px;
+}

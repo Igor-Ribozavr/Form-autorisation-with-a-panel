@@ -1,0 +1,67 @@
+.page-second {
+  width: 100%;
+  height: 100vh;
+  min-height: 770px;
+  background: rgba(243, 244, 245, 1);
+  background-size: cover;
+  overflow: hidden;
+}
+.main-window {
+  max-width: 680px;
+  height: 895px;
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 400px;
+  margin-bottom: 100px;
+}
+
+.header-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-destanation {
+  margin-top: 65px;
+  margin-bottom: 0px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  color: #424242;
+  margin-left: 40px;
+}
+.span-flights {
+  margin-right: 20px;
+}
+.span-destanation {
+  margin-left: 20px;
+}
+
+.selection {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #424242;
+  margin-top: 31px;
+  margin-left: 50px;
+}
+
+.counter {
+  font-weight: 550;
+  color: #1157a7;
+}
+
+.list-flights {
+  margin-top: 23px;
+  margin-left: 59px;
+  margin-right: 40px;
+  margin-bottom: 54px;
+  border: none;
+  height: 515px;
+}

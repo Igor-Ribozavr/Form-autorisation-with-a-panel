@@ -1,0 +1,114 @@
+.container-flights-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-city-content {
+  display: flex;
+  justify-content: space-between;
+  width: 493px;
+  height: 101px;
+}
+.logo-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.like-icon {
+  margin-right: 0px;
+  width: 19px;
+}
+
+.like-content {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+}
+
+.like-container {
+  position: relative;
+}
+
+.test {
+  position: absolute;
+  left: 61px;
+  top: 7px;
+}
+
+.circle {
+  border-radius: 100%;
+  width: 64px;
+  height: 64px;
+  background-color: rgba(0, 119, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.city-title {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #424242;
+}
+
+.date-title,
+.company-title {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #878787;
+  margin: 0px;
+}
+
+.prise-title {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #878787;
+  margin-top: 63px;
+  margin-right: 19px;
+}
+
+.prise {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #000000;
+  margin-left: 8px;
+  margin-bottom: 23px;
+}
+
+.logo-content {
+  height: 101px;
+  width: 100px;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e7e7e7;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1157a7;
+  border-radius: 2px;
+}
