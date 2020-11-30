@@ -1,59 +1,57 @@
-import React from 'react';
-import './listFlights.css';
+import React, { useState, useEffect } from 'react';
 import ContentFlightsList from './ContentFlightsList/ContentFlightsList'
 import InfiniteScroll from 'react-infinite-scroll-component';
+// import { useDispatch, useSelector } from 'react-redux';
+// import { startFetchReceiveData } from '../../../../redux/action';
+import './listFlights.css';
+
 
 const style = {
   height: 101,
+  width: '580px',
   borderStyle: 'solid',
   borderWidth: '1px 0px 1px 0px',
   borderColor: 'rgba(135, 135, 135, 0.2) ',
 };
 
-class ListFligths extends React.Component {
-  state = {
-    items: Array.from({ length: 20 }),
-    hasMore: true,
+
+function ListFligths() {
+  const [items, setItems] = useState([]);
+
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(startFetchReceiveData());
+  // }, [dispatch]);
+
+  // const data = useSelector((state) => state.panelReduser.data);
+  
+
+  useEffect(() => {
+    fetchImages();
+  }, []);
+
+  const fetchImages = async () => {
+    const response = await fetch('https://swapi.dev/api/starships/');
+    const result = await response.json();
+    setItems(result.results);
   };
 
-  fetchMoreData = () => {
-    if (this.state.items.length >= 500) {
-      this.setState({ hasMore: false });
-      return;
-    }
-    // a fake async api call like which sends
-    // 20 more records in .5 secs
-    setTimeout(() => {
-      this.setState({
-        items: this.state.items.concat(Array.from({ length: 20 })),
-      });
-    }, 500);
-  };
-
-  render() {
-    return (
-      <div>
-        <InfiniteScroll
-          dataLength={this.state.items.length}
-          next={this.fetchMoreData}
-          hasMore={this.state.hasMore}
-          loader={<h4>Loading...</h4>}
-          height={515}
-          endMessage={
-            <p style={{ textAlign: 'center' }}>
-              <b>Yay! You have seen it all</b>
-            </p>
-          }
-        >
-          {this.state.items.map((data, index) => (
-            <div style={style} key={index}>
-              <ContentFlightsList data={data}/>
-            </div>
-          ))}
-        </InfiniteScroll>
-      </div>
-    );
-  }
+  return (
+    <div style={{ width: '598px', }}>
+      <InfiniteScroll
+        height={515}
+        dataLength={items.length}
+        next={fetchImages}
+        hasMore={true}
+        
+      >
+        {items.map((item, index) => (
+          <div style={style} key={index}><ContentFlightsList/></div>
+        ))}
+      </InfiniteScroll>
+    </div>
+  );
 }
+
 
 export default ListFligths;

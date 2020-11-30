@@ -19,14 +19,13 @@ export const fetchReceiveData = async () => {
 //POST
 
 export const fetchAdd = async (action) => {
-  const response = await fetch(`http://localhost:4000/payments`, {
+  const response = await fetch(`URL`, {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',
     },
     body: JSON.stringify({
-      // cardNumber: action.payload.cardNumber,
-      // sumOfOrder: action.payload.sumOfOrder,
+      // body
     }),
   });
   const result = await response.json();

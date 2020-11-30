@@ -1,7 +1,8 @@
-import { RECEIVE_ALL, ADD } from './actionTypes';
+import { RECEIVE_ALL, ADD, COUNT } from './actionTypes';
 
 const defaultState = {
   loading: false,
+  count: [],
 };
 
 export const panelReduser = (state = defaultState, action) => {
@@ -15,8 +16,12 @@ export const panelReduser = (state = defaultState, action) => {
     case ADD:
       return {
         ...state,
-        loading: true,
         creature: action.payload,
+      };
+    case COUNT:
+      return {
+        ...state,
+        count: [...action.payload],
       };
     default:
       return state;

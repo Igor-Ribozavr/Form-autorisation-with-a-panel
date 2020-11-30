@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from '../Modal/Modal';
-import Panel from '../Panel/Panel'
-import '../App/app.css'
+import Panel from '../Panel/Panel';
+import '../App/app.css';
 
 function App() {
   return (
@@ -13,4 +13,3 @@ function App() {
 }
 
 export default App;
- 
