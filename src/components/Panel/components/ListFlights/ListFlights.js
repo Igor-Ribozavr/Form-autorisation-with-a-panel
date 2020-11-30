@@ -18,13 +18,16 @@ const style = {
 function ListFligths() {
   const [items, setItems] = useState([]);
 
-  // const dispatch = useDispatch();
-  // useEffect(() => {
-  //   dispatch(startFetchReceiveData());
-  // }, [dispatch]);
+//   const dispatch = useDispatch();
+//   useEffect(() => {
+//     dispatch(startFetchReceiveData());
+//   }, [dispatch]);
 
   // const data = useSelector((state) => state.panelReduser.data);
   
+
+
+
 
   useEffect(() => {
     fetchImages();

@@ -4,7 +4,6 @@
   min-height: 770px;
   background: #000 url('../Modal/img/Rectangle\ 1.jpg') center no-repeat;
   background-size: cover;
-  position: relative;
   overflow: hidden;
 }
 

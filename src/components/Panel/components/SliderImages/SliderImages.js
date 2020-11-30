@@ -10,8 +10,9 @@ function SliderImages() {
       <SwiperSlide key={`slide-${i}`}>
         <img
           src={`https://picsum.photos/id/${i + 1}/144/129`}
-          style={{ borderRadius: '10px' }}
+          // style={{ borderRadius: '10px',  }}
           alt={`Slide ${i}`}
+          className="slider-image"
         />
       </SwiperSlide>
     );
